@@ -1,0 +1,59 @@
+@import '_settings'
+@import '_fonts'
+
+normalize()
+base()
+
+*
+  margin: 0
+  padding: 0
+
+body
+  padding: 50px
+
+.content
+  width: 100%
+
+.type
+  float: left
+  width: 25%
+
+.type.red { color: red; }
+.type.grey { color: grey; }
+.type.black { color: black; }
+.type.green { color: green; }
+
+.type > *
+  padding: 5px
+  padding-right: 10px
+
+.panel
+  float: left
+  width: 100%
+  height: 100px
+
+.panel.red { background-color: red; }
+.panel.grey { background-color: grey; }
+.panel.black { background-color: black; }
+.panel.green { background-color: green; }
+
+.thin { font-family: 'bariol_thin-webfont'; }
+.light { font-family: 'bariol_light-webfont'; }
+.regular { font-family: 'bariol_regular-webfont'; }
+.bold { font-family: 'bariol_bold-webfont'; }
+
+.thin.italic { font-family: 'bariol_thin_italic-webfont'; }
+.light.italic { font-family: 'bariol_light_italic-webfont'; }
+.regular.italic { font-family: 'bariol_regular_italic-webfont'; }
+.bold.italic { font-family: 'bariol_bold_italic-webfont'; }
+
+.copy
+  font-size: 16px
+
+.copy.light { font-family: 'freigsanlig-webfont'; }
+.copy.book { font-family: 'freigsanboo-webfont'; }
+.copy.medium { font-family: 'freigsanmed-webfont'; }
+
+.copy.light.italic { font-family: 'freigsanligita-webfont'; }
+.copy.book.italic { font-family: 'freigsanbooita-webfont'; }
+.copy.medium.italic { font-family: 'freigsanmedita-webfont'; }

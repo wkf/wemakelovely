@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+  colors         = ['red', 'grey', 'black', 'green']
+  header_weights = ['thin', 'light', 'regular', 'bold']
+  copy_weights   = ['light', 'book', 'medium']
+
+  copy           = "Pitchfork fanny pack organic selvage, before they sold out intelligentsia banh mi pop-up pickled photo booth umami forage godard art party wolf."
+
+  .content
+    - for color in colors
+      .type(class = color)
+
+        - for weight in header_weights
+          h1(class = weight)= title
+          h1.italic(class = weight)= title
+
+        - for weight in copy_weights
+          .copy(class = weight)= copy
+          .copy.italic(class = weight)= copy
+
+    - for color in colors
+      .panel(class = color)
