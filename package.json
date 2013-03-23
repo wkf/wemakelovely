@@ -3,7 +3,9 @@
   "subdomain": "wemakelovely",
   "domains":[
     "wemakelove.ly",
-    "wemakelovely.com"
+    "wemakelovely.com",
+    "makeslove.ly",
+    "makeslovely.com"
   ],
   "version": "0.0.0",
   "private": true,
