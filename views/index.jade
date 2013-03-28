@@ -1,24 +1,38 @@
 extends layout
 
 block content
-
-  colors         = ['red', 'grey', 'black', 'green']
-  header_weights = ['thin', 'light', 'regular', 'bold']
-  copy_weights   = ['light', 'book', 'medium']
-
-  copy           = "Pitchfork fanny pack organic selvage, before they sold out intelligentsia banh mi pop-up pickled photo booth umami forage godard art party wolf."
-
-  .content
-    - for color in colors
-      .type(class = color)
-
-        - for weight in header_weights
-          h1(class = weight)= title
-          h1.italic(class = weight)= title
-
-        - for weight in copy_weights
-          .copy(class = weight)= copy
-          .copy.italic(class = weight)= copy
-
-    - for color in colors
-      .panel(class = color)
+  .contents
+    .column1
+      img.logo(src='svg/wml-logo.svg')
+      .bottom
+        h3= 'Us'
+        .our
+          span
+            img.our-facebook(src='svg/icon-l-facebook.svg')
+          span
+            img.our-twitter(src='svg/icon-l-twitter.svg')
+    .column2
+      h1= 'We make lovely.'
+      h2
+        span.red= 'Design'
+        = ' & '
+        span.green= 'Devolpment'
+      .bottom
+        h3
+          span.red='Her'
+          = ' & '
+          span.green='Him'
+        .her
+          span
+            img.her-dribbble(src='svg/icon-m-dribbble.svg')
+          span
+            img.her-linkedin(src='svg/icon-m-linkedin.svg')
+          span
+            img.her-personal(src='svg/icon-m-personal.svg')
+        .his
+          span
+            img.his-github(src='svg/icon-w-github.svg')
+          span
+            img.his-linkedin(src='svg/icon-w-linkedin.svg')
+          span
+            img.his-personal(src='svg/icon-w-personal.svg')
