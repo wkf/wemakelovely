@@ -12,42 +12,6 @@ img
   outline: none
   border: none
 
-.content
-  width: 100%
-
-.type
-  float: left
-  width: 25%
-
-.type.red { color: red; }
-.type.grey { color: grey; }
-.type.black { color: black; }
-.type.green { color: green; }
-
-.type > *
-  padding: 5px
-  padding-right: 10px
-
-.panel
-  float: left
-  width: 100%
-  height: 100px
-
-.panel.red { background-color: red; }
-.panel.grey { background-color: grey; }
-.panel.black { background-color: black; }
-.panel.green { background-color: green; }
-
-.thin { font-family: 'bariol_thin-webfont'; }
-.light { font-family: 'bariol_light-webfont'; }
-.regular { font-family: 'bariol_regular-webfont'; }
-.bold { font-family: 'bariol_bold-webfont'; }
-
-.thin.italic { font-family: 'bariol_thin_italic-webfont'; }
-.light.italic { font-family: 'bariol_light_italic-webfont'; }
-.regular.italic { font-family: 'bariol_regular_italic-webfont'; }
-.bold.italic { font-family: 'bariol_bold_italic-webfont'; }
-
 .contents
   position: absolute
   top: 0
@@ -55,109 +19,26 @@ img
   left: 0
   right: 0
   margin: auto
-  height: 400px
-  width: 495px
+  height: 147px
+  width: 100px
 
-.bottom
-  margin-top: 200px
-  position: relative
+.social-icon
+  size: 40 40
+  padding: 30px 53px
 
+.our-email
+  @extends .social-icon
+  position: absolute
+  left: 0px
+  top: 0px
+  z-index: -1
+  opacity: 0
 
 .logo
   height: 100px
 
-h1
-  font-family: 'bariol_light-webfont';
-  font-size: 50px
-  margin: 0
+a:hover .logo
+  opacity: .5
 
-h2
-  font-family: 'bariol_light_italic-webfont';
-  font-size: 34px
-
-h3
-  font-family: 'bariol_regular-webfont';
-  font-size: 22px
-  text-align: center
-  padding-bottom: 20px
-
-span
-  color: grey
-
-.red
-  color: red
-.green
-  color: green
-
-.column
-  float: left
-
-.column1
-  @extends .column
-  width 33.5%
-
-.column2
-  @extends .column
-
-.copy
-  font-size: 16px
-
-.our
-  & > *
-    display: inline-block
-    width: 50%
-    text-align: center
-    &:first-child
-      position: relative
-      left: 15px
-    &:last-child
-      position: relative
-      right: 15px
-
-.her
-  width: 50%
-  display: inline-block
-  & > *
-    display: inline-block
-    width: 33%
-    & > *
-      float: left;
-
-.his
-  width: 50%
-  display: inline-block
-  & > *
-    display: inline-block
-    width: 33%
-    & > *
-      float: right;
-
-
-.copy.light { font-family: 'freigsanlig-webfont'; }
-.copy.book { font-family: 'freigsanboo-webfont'; }
-.copy.medium { font-family: 'freigsanmed-webfont'; }
-
-.copy.light.italic { font-family: 'freigsanligita-webfont'; }
-.copy.book.italic { font-family: 'freigsanbooita-webfont'; }
-.copy.medium.italic { font-family: 'freigsanmedita-webfont'; }
-
-
-.social-icon
-  size: 40 40
-
-.our-email
-  @extends .social-icon
-.our-twitter
-  @extends .social-icon
-.her-dribbble
-  @extends .social-icon
-.her-linkedin
-  @extends .social-icon
-.her-personal
-  @extends .social-icon
-.his-github
-  @extends .social-icon
-.his-linkedin
-  @extends .social-icon
-.his-personal
-  @extends .social-icon
+a:hover .our-email
+  opacity: 1

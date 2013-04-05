@@ -3,7 +3,11 @@
   "subdomain": "wemakelovely",
   "domains":[
     "wemakelove.ly",
-    "wemakelovely.com"
+    "wemakelovely.com",
+    "makeha.us",
+    "buildmill.com",
+    "crushmill.com",
+    "polyheart.co"
   ],
   "version": "0.0.0",
   "private": true,
