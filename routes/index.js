@@ -6,5 +6,5 @@ exports.set = function(app) {
  * GET home page.
  */
 function homePage(req, res) {
-  res.render('index', { title: 'We make lovely.' });
+  res.render('index', { title: 'Mars & Will' });
 }
