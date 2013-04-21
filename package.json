@@ -1,7 +1,7 @@
 {
   "name": "wemakelovely",
   "subdomain": "wemakelovely",
-  "domains":[
+  "domains": [
     "wemake.lv",
     "makes.lv",
     "wemakelv.com",
@@ -13,7 +13,7 @@
     "polyheart.co",
     "wemakeblank.com"
   ],
-  "version": "0.0.0",
+  "version": "0.0.0-30",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -26,7 +26,7 @@
     "jade": "latest",
     "stylus": "latest",
     "coffee-script": "latest",
-    "roots-express": "latest",
+    "roots-express": "0.0.4-1",
     "connect-assets": "latest"
   }
 }
